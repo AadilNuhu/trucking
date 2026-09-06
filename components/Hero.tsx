@@ -88,7 +88,7 @@ export default function Hero() {
                     <div className="mt-9 flex flex-col gap-3 sm:flex-row">
 
                         <a
-                            href="#quote"
+                            href="/quoteform"
                             className="group inline-flex items-center justify-center gap-2 rounded-lg bg-[#F4C430] px-6 py-3.5 text-sm font-bold text-[#071A33] transition-all duration-300 hover:-translate-y-1 hover:bg-[#FFD84D] hover:shadow-xl hover:shadow-yellow-500/20"
                         >
                             Get a Quote
@@ -100,7 +100,7 @@ export default function Hero() {
                         </a>
 
                         <a
-                            href="#track"
+                            href="/trackload"
                             className="inline-flex items-center justify-center gap-2 rounded-lg border border-white/25 bg-white/10 px-6 py-3.5 text-sm font-bold text-white backdrop-blur-sm transition-all duration-300 hover:border-[#F4C430] hover:bg-white/15 hover:text-[#F4C430]"
                         >
                             Track Your Load
