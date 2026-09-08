@@ -9,6 +9,8 @@ import {
   Weight,
 } from "lucide-react";
 
+import FleetShowcase from "@/components/FleetShowcase"
+
 const cargoTypes = [
   {
     title: "General Cargo",
@@ -225,6 +227,11 @@ export default function TruckLoadPage() {
           </div>
         </div>
       </section>
+
+      {/* =========================
+          TRUCK OPTIONS
+      ========================== */}
+      <FleetShowcase />
 
       {/* =========================
           TRUCK OPTIONS

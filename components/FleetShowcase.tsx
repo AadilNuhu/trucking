@@ -4,13 +4,13 @@ const fleetImages = [
     {
         src: "/truck.jpg",
         alt: "Long-haul freight truck ready for regional transport",
-        label: "Long-haul freight",
+        label: "Fleet in motion",
         featured: true,
     },
     {
         src: "/truck1.jpg",
         alt: "Freight truck prepared for a regional delivery",
-        label: "Load-ready transport",
+        label: "Long-haul freight",
         featured: false,
     },
     {
@@ -22,7 +22,13 @@ const fleetImages = [
     {
         src: "/truck3.jpg",
         alt: "Company trucks lined up at the depot",
-        label: "Fleet in motion",
+        label: "Load-ready transport",
+        featured: false,
+    },
+    {
+        src: "/demo-truck.jpg",
+        alt: "Company trucks front view",
+        label: "Front view",
         featured: false,
     },
 ];
