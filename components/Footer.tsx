@@ -1,4 +1,5 @@
 import { Truck, ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 
 const footerLinks = [
   { name: "Home", href: "/" },
@@ -24,10 +25,12 @@ export default function Footer() {
               className="inline-flex items-center gap-3"
             >
               <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#F4C430]">
-                <Truck
-                  size={24}
-                  strokeWidth={2.2}
-                  className="text-[#071A33]"
+                <Image
+                  src="/demo-truck.jpg"
+                  alt="Right Thing Trucking logo"
+                  width={44}
+                  height={44}
+                  className="h-full w-full object-center rounded-xl"
                 />
               </div>
 
