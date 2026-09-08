@@ -4,6 +4,7 @@ import HowItWorks from "@/components/HowItWorks";
 import Routes from "@/components/RouteSection";
 import Testimonial from "@/components/Testimonial";
 import WhyChooseUs from "@/components/WhyChooseUs";
+import FleetShowcase from "@/components/FleetShowcase";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Services />
       <HowItWorks />
       <WhyChooseUs />
+      <FleetShowcase />
       <Routes />
       <Testimonial />
     </div>

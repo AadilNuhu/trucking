@@ -2,10 +2,11 @@
 
 import { useState } from "react";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
+import Image from "next/image";
 import {
   Menu,
   X,
-  Truck,
   ChevronRight,
 } from "lucide-react";
 
@@ -30,29 +31,32 @@ export default function Navbar() {
       <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-10">
 
         {/* LOGO */}
-        <a
+          <Link
           href="/"
-          className="flex items-center gap-3"
+          aria-label="Trucking and Logistics home"
+          className="group flex items-center gap-3"
           onClick={() => setIsOpen(false)}
         >
-          <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#F4C430] shadow-lg shadow-yellow-500/10">
-            <Truck
-              size={25}
-              strokeWidth={2.2}
-              className="text-[#071A33]"
+          <div className="relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-xl bg-white shadow-lg shadow-black/15 transition-transform duration-300 group-hover:-rotate-3 group-hover:scale-105">
+            <Image
+              src="/logo.png"
+              alt="Right Thing Trucking logo"
+              width={44}
+              height={44}
+              className="h-full w-full scale-[1.35] object-contain"
             />
           </div>
 
           <div className="flex flex-col leading-none">
-            <span className="text-xl font-bold tracking-tight text-white">
-              Trucking
+            <span className="text-[14px] font-extrabold uppercase tracking-[0.06em] text-white">
+              Do the Right Thing
             </span>
 
-            <span className="mt-1 text-[9px] font-medium uppercase tracking-[0.22em] text-[#F4C430]">
-              West Africa Logistics
+            <span className="mt-1 text-[8px] font-bold uppercase tracking-[0.18em] text-[#F4C430]">
+              Trucking & Logistics
             </span>
           </div>
-        </a>
+          </Link>
 
         {/* DESKTOP NAVIGATION */}
         <div className="hidden items-center gap-7 lg:flex">
