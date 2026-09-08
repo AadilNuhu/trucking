@@ -39,11 +39,11 @@ export default function Navbar() {
         >
           <div className="relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-xl bg-white shadow-lg shadow-black/15 transition-transform duration-300 group-hover:-rotate-3 group-hover:scale-105">
             <Image
-              src="/logo.png"
+              src="/demo-truck.jpg"
               alt="Right Thing Trucking logo"
               width={44}
               height={44}
-              className="h-full w-full scale-[1.35] object-contain"
+              className="h-full w-full object-center"
             />
           </div>
 
