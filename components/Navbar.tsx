@@ -31,7 +31,7 @@ export default function Navbar() {
       <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-10">
 
         {/* LOGO */}
-          <Link
+        <Link
           href="/"
           aria-label="Trucking and Logistics home"
           className="group flex items-center gap-3"
@@ -56,7 +56,7 @@ export default function Navbar() {
               Trucking & Logistics
             </span>
           </div>
-          </Link>
+        </Link>
 
         {/* DESKTOP NAVIGATION */}
         <div className="hidden items-center gap-7 lg:flex">
@@ -67,21 +67,19 @@ export default function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className={`group relative py-2 text-[14px] font-medium transition-colors duration-200 ${
-                  active
+                className={`group relative py-2 text-[14px] font-medium transition-colors duration-200 ${active
                     ? "text-white"
                     : "text-white/70 hover:text-white"
-                }`}
+                  }`}
               >
                 {link.name}
 
                 {/* Active / Hover Line */}
                 <span
-                  className={`absolute -bottom-1 left-0 h-0.5 bg-[#F4C430] transition-all duration-300 ${
-                    active
+                  className={`absolute -bottom-1 left-0 h-0.5 bg-[#F4C430] transition-all duration-300 ${active
                       ? "w-full"
                       : "w-0 group-hover:w-full"
-                  }`}
+                    }`}
                 />
               </a>
             );
@@ -110,11 +108,10 @@ export default function Navbar() {
 
       {/* MOBILE MENU */}
       <div
-        className={`overflow-hidden border-t border-white/10 bg-[#071A33] transition-all duration-300 lg:hidden ${
-          isOpen
+        className={`overflow-hidden border-t border-white/10 bg-[#071A33] transition-all duration-300 lg:hidden ${isOpen
             ? "max-h-125 opacity-100"
             : "max-h-0 opacity-0"
-        }`}
+          }`}
       >
         <div className="px-5 pb-6 pt-3 sm:px-8">
           <div className="flex flex-col">
@@ -126,11 +123,10 @@ export default function Navbar() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className={`flex items-center justify-between border-b border-white/10 py-4 text-sm font-medium transition-colors ${
-                    active
+                  className={`flex items-center justify-between border-b border-white/10 py-4 text-sm font-medium transition-colors ${active
                       ? "text-[#F4C430]"
                       : "text-white/80 hover:text-[#F4C430]"
-                  }`}
+                    }`}
                 >
                   <span>{link.name}</span>
 

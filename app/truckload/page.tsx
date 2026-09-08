@@ -71,8 +71,8 @@ export default function TruckLoadPage() {
       ========================== */}
       <section className="relative min-h-[650px] overflow-hidden bg-[#071A33]">
         {/* Main truck image */}
-          <Image
-            src="/truck.jpg"
+        <Image
+          src="/truck.jpg"
           alt="Freight truck transporting cargo"
           fill
           priority
