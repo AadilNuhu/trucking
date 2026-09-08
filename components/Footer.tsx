@@ -3,9 +3,9 @@ import { Truck, ArrowUpRight } from "lucide-react";
 const footerLinks = [
   { name: "Home", href: "/" },
   { name: "Services", href: "#services" },
-  { name: "Truck Load", href: "#truck-load" },
-  { name: "Routes", href: "#routes" },
-  { name: "About Us", href: "#about" },
+  { name: "Truck Load", href: "/truckload" },
+  { name: "Routes", href: "/routes" },
+  { name: "About Us", href: "/about" },
   { name: "Contact Us", href: "/contact" },
 ];
 
@@ -89,17 +89,17 @@ export default function Footer() {
               </p>
 
               <a
-                href="tel:+233000000000"
+                href="tel:+233530556865"
                 className="block transition-colors hover:text-white"
               >
-                +233 XX XXX XXXX
+                +233 53 055 6865
               </a>
 
               <a
-                href="mailto:info@example.com"
+                href="mailto:newmandesmond@yahoo.com"
                 className="block transition-colors hover:text-white"
               >
-                info@example.com
+                newmandesmond@yahoo.com
               </a>
             </div>
           </div>
