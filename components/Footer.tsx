@@ -24,13 +24,14 @@ export default function Footer() {
               href="/"
               className="inline-flex items-center gap-3"
             >
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#F4C430] overflow-hidden">
+              <div className="h-11 w-11 overflow-hidden rounded-xl">
                 <Image
                   src="/logo.jpg"
                   alt="Right Thing Trucking logo"
-                  width={44}
-                  height={44}
-                  className="h-full w-full object-cover object-center scale-[2.5]"
+                  width={500}
+                  height={500}
+                  quality={100}
+                  className="h-full w-full object-cover object-center scale-[2.3]"
                 />
               </div>
 

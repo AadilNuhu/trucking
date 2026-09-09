@@ -38,14 +38,17 @@ export default function Navbar() {
           onClick={() => setIsOpen(false)}
         >
           <div className="relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-xl bg-white shadow-lg shadow-black/15 transition-transform duration-300 group-hover:-rotate-3 group-hover:scale-105">
-                            <Image
-                              src="/logo.jpg"
-                              alt="Right Thing Trucking logo"
-                              width={44}
-                              height={44}
-                              className="h-full w-full object-cover object-center scale-[2.5]"
-                            />
-                          </div>
+            <div className="h-11 w-11 overflow-hidden rounded-xl">
+              <Image
+                src="/logo.jpg"
+                alt="Right Thing Trucking logo"
+                width={500}
+                height={500}
+                quality={100}
+                className="h-full w-full object-cover object-center scale-[2.5]"
+              />
+            </div>
+          </div>
 
           <div className="flex flex-col leading-none">
             <span className="text-[14px] font-extrabold uppercase tracking-[0.06em] text-white">
@@ -68,8 +71,8 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 className={`group relative py-2 text-[14px] font-medium transition-colors duration-200 ${active
-                    ? "text-white"
-                    : "text-white/70 hover:text-white"
+                  ? "text-white"
+                  : "text-white/70 hover:text-white"
                   }`}
               >
                 {link.name}
@@ -77,8 +80,8 @@ export default function Navbar() {
                 {/* Active / Hover Line */}
                 <span
                   className={`absolute -bottom-1 left-0 h-0.5 bg-[#F4C430] transition-all duration-300 ${active
-                      ? "w-full"
-                      : "w-0 group-hover:w-full"
+                    ? "w-full"
+                    : "w-0 group-hover:w-full"
                     }`}
                 />
               </a>
@@ -109,8 +112,8 @@ export default function Navbar() {
       {/* MOBILE MENU */}
       <div
         className={`overflow-hidden border-t border-white/10 bg-[#071A33] transition-all duration-300 lg:hidden ${isOpen
-            ? "max-h-125 opacity-100"
-            : "max-h-0 opacity-0"
+          ? "max-h-125 opacity-100"
+          : "max-h-0 opacity-0"
           }`}
       >
         <div className="px-5 pb-6 pt-3 sm:px-8">
@@ -124,8 +127,8 @@ export default function Navbar() {
                   href={link.href}
                   onClick={() => setIsOpen(false)}
                   className={`flex items-center justify-between border-b border-white/10 py-4 text-sm font-medium transition-colors ${active
-                      ? "text-[#F4C430]"
-                      : "text-white/80 hover:text-[#F4C430]"
+                    ? "text-[#F4C430]"
+                    : "text-white/80 hover:text-[#F4C430]"
                     }`}
                 >
                   <span>{link.name}</span>

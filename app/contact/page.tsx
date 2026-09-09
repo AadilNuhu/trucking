@@ -25,7 +25,7 @@ const contactInfo = [
     icon: Mail,
     title: "Email",
     value: "newmandesmond@yahoo.com",
-    href: "newmandesmond@yahoo.com",
+    href: "mailto:newmandesmond@yahoo.com",
   },
   {
     icon: Clock3,
