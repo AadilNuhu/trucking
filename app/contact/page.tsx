@@ -18,14 +18,14 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    value: "+233 XX XXX XXXX",
-    href: "tel:+233000000000",
+    value: "+233 530 556 865",
+    href: "tel:+233530556865",
   },
   {
     icon: Mail,
     title: "Email",
-    value: "info@example.com",
-    href: "mailto:info@example.com",
+    value: "newmandesmond@yahoo.com",
+    href: "newmandesmond@yahoo.com",
   },
   {
     icon: Clock3,

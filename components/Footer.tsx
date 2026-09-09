@@ -1,4 +1,4 @@
-import { Truck, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 
 const footerLinks = [
@@ -24,19 +24,19 @@ export default function Footer() {
               href="/"
               className="inline-flex items-center gap-3"
             >
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#F4C430]">
+              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#F4C430] overflow-hidden">
                 <Image
-                  src="/demo-truck.jpg"
+                  src="/logo.jpg"
                   alt="Right Thing Trucking logo"
                   width={44}
                   height={44}
-                  className="h-full w-full object-center rounded-xl"
+                  className="h-full w-full object-cover object-center scale-[2.5]"
                 />
               </div>
 
               <div className="flex flex-col leading-none">
                 <span className="text-xl font-bold tracking-tight">
-                  Trucking
+                  Do The Right Thing
                 </span>
 
                 <span className="mt-1 text-[9px] font-medium uppercase tracking-[0.22em] text-[#F4C430]">

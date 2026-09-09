@@ -38,14 +38,14 @@ export default function Navbar() {
           onClick={() => setIsOpen(false)}
         >
           <div className="relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-xl bg-white shadow-lg shadow-black/15 transition-transform duration-300 group-hover:-rotate-3 group-hover:scale-105">
-            <Image
-              src="/demo-truck.jpg"
-              alt="Right Thing Trucking logo"
-              width={44}
-              height={44}
-              className="h-full w-full object-center"
-            />
-          </div>
+                            <Image
+                              src="/logo.jpg"
+                              alt="Right Thing Trucking logo"
+                              width={44}
+                              height={44}
+                              className="h-full w-full object-cover object-center scale-[2.5]"
+                            />
+                          </div>
 
           <div className="flex flex-col leading-none">
             <span className="text-[14px] font-extrabold uppercase tracking-[0.06em] text-white">

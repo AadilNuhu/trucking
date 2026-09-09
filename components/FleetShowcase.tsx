@@ -32,12 +32,12 @@ const fleetImages = [
         label: "Our fleet",
         featured: false,
     },
-    {
-        src: "/truck5.jpg",
-        alt: "Company truck ready for transport",
-        label: "Ready to deliver",
-        featured: false,
-    },
+    // {
+    //     src: "/truck5.jpg",
+    //     alt: "Company truck ready for transport",
+    //     label: "Ready to deliver",
+    //     featured: false,
+    // },
 ];
 
 export default function FleetShowcase() {
@@ -147,34 +147,6 @@ export default function FleetShowcase() {
                                             ">
                                                 {image.label}
                                             </p>
-                                        </div>
-
-                                        <div className="
-                                            flex h-9 w-9 shrink-0
-                                            items-center justify-center
-                                            rounded-full
-                                            border border-white/20
-                                            bg-white/10
-                                            backdrop-blur-sm
-                                            transition-all
-                                            duration-300
-                                            group-hover:bg-[#F4C430]
-                                            group-hover:text-[#071A33]
-                                        ">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                fill="none"
-                                                viewBox="0 0 24 24"
-                                                strokeWidth={2}
-                                                stroke="currentColor"
-                                                className="h-4 w-4"
-                                            >
-                                                <path
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                    d="M7 17 17 7M7 7h10v10"
-                                                />
-                                            </svg>
                                         </div>
                                     </div>
                                 </div>

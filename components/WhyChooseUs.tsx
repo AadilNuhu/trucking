@@ -2,7 +2,6 @@ import {
     Clock3,
     Globe2,
     MessageCircle,
-    PackageCheck,
     ShieldCheck,
     Truck,
 } from "lucide-react";
@@ -136,7 +135,7 @@ export default function WhyChooseUs() {
                         {/* IMAGE */}
                         <div className="group relative overflow-hidden rounded-3xl">
                             <Image
-                                src="/landing.webp"
+                                src="/truck2.jpg"
                                 alt="West African freight transportation"
                                 width={900}
                                 height={900}

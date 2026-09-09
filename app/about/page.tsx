@@ -5,6 +5,7 @@ import {
   Clock3,
   ArrowRight,
 } from "lucide-react";
+import Image from "next/image";
 
 const values = [
   {
@@ -66,11 +67,13 @@ export default function AboutPage() {
               <div className="overflow-hidden rounded-3xl bg-[#071A33]">
                 <div className="flex aspect-[4/3] items-center justify-center">
                   <div className="text-center">
-                    <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-2xl bg-[#F4C430]">
-                      <Truck
-                        size={48}
-                        strokeWidth={1.8}
-                        className="text-[#071A33]"
+                    <div className="mx-auto flex h-64 w-64 items-center justify-center rounded-2xl bg-[#F4C430]">
+                      <Image
+                        src="/logo.jpg"
+                         width={256}
+                         height={256}
+                        alt="West Africa Logistics"
+                        className="h-full w-full object-center object-cover"
                       />
                     </div>
 
