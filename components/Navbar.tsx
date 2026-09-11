@@ -37,17 +37,16 @@ export default function Navbar() {
           className="group flex items-center gap-3"
           onClick={() => setIsOpen(false)}
         >
-          <div className="relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-xl bg-white shadow-lg shadow-black/15 transition-transform duration-300 group-hover:-rotate-3 group-hover:scale-105">
-            <div className="h-11 w-11 overflow-hidden rounded-xl">
-              <Image
-                src="/logo.jpg"
-                alt="Right Thing Trucking logo"
-                width={500}
-                height={500}
-                quality={100}
-                className="h-full w-full object-cover object-center scale-[2.5]"
-              />
-            </div>
+          <div className="relative flex h-16 w-24 shrink-0 scale-105 items-center justify-center overflow-hidden rounded-xl border border-white/80 bg-white shadow-lg shadow-black/20 ring-1 ring-[#F4C430]/30 transition-transform duration-300 group-hover:-rotate-3 group-hover:scale-110">
+            <Image
+              src="/logo1.jpg"
+              alt="Right Thing Trucking logo"
+              width={96}
+              height={72}
+              quality={100}
+              priority
+              className="h-full w-full object-cover"
+            />
           </div>
 
           <div className="flex flex-col leading-none">
