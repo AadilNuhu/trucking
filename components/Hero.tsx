@@ -13,8 +13,8 @@ const stats = [
         icon: PackageCheck,
     },
     {
-        value: "100+",
-        label: "West African Routes",
+        value: "1 - 10",
+        label: "West African Countries",
         icon: MapPin,
     },
     {
